@@ -48,9 +48,9 @@
         </div>
 
         <!-- Carte lorsque toutes les questions ont été complétées -->
-        <div class="card-body" v-if="current == quiz.length">
+        <div class="card-body" v-if="current === quiz.length">
           <h4 class="card-title">Vous avez terminé !</h4>
-          <p class="card-text">Affiche le score ici !</p>
+          <p class="card-text">Votre score est {{ score }}/{{ quiz.length}}</p>
         </div>
       </div>
     </main>
